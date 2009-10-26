@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/usr/share/xml/docbook/stylesheet/nwalsh/html/docbook.xsl" type="text/xsl"?>
+<set id="Unknown Horizons Manuals">
+	<book id="Game Manual">
+	
+<!-- Block mit grundlegenden Informationen zum Buch -->
+		<bookinfo>
+			<title>Unknown Horizons – Das Handbuch</title>
+			<autor>
+				<firstname>André</firstname>
+				<surname>Reichelt</surname>
+			</autor>
+			<edition>Version 2009.2</edition>
+			<pubdate>2009</pubdate>
+			<copyright>
+				<year>2009</year>
+				<holder>The Unknown Horizons Team</holder>
+			</copyright>
+			<legalnotice>
+				<para>This book is released under the conditions of BLA.</para>
+			</legalnotice>
+		</bookinfo>
+		
+		<!-- Vorwort -->
+		<preface><title>Vorwort</title>
+			<para>Herzlich willkommen …</para>
+		</preface>
+		
+<!-- Kapitel: Installation und Inbetriebnahme -->		
+		<chapter><title>Installation und Inbetriebnahme</title>
+			<para>Dieser Abschnitt beschreibt, wie das Spiel unter Linux und Windows installiert und gestartet wird.</para>
+			<!-- Windows -->
+			<sect1><title>Windows</title>
+				<sect2><title>Installation</title>
+					<para>Unknown Horizons kann unter Windows bequem mit einem Installationsprogramm eingerichtet werden. Es werden zwei verschiedene Installationsprogramme angeboten: Der <emphasis>Offline-Installer</emphasis> hat bereits alle notwendigen Komponenten mit an Bord. Der etwas kleinere <emphasis>Online-Installer</emphasis> beinhaltet nur die notwendigsten Komponenten und lädt alles Weitere bei Bedarf aus dem Internet nach. Deshalb ist eine vorhandene Internetverbindung hier zwingend erforderlich.</para>
+					<para>Um das Spiel unter Windows zu betreiben wird Python 2.5.X benötigt. Mit niedrigeren oder höheren Versionen ist die Verwendung derzeitig leider noch nicht möglich. Für Unknown Horizons 2009.2 wird Python 2.5.4 empfohlen, welches bereits in die beiden Installer integriert ist. Außerdem wird die Python-Erweiterung <application>PyYAML</application> benötigt, die ebenfalls automatisch vom Installationsprogramm eingerichtet wird. Zur Audiowiedergabe ist außerdem eine funktionierende Installation von <application>OpenAL</application> erforderlich, welche sich ebenfalls bequem mit dem Setup erledigen lässt.</para>
+					<para>Laden Sie sich also eines der beiden Installationsprogramme von unserer <ulink url="http://unknown-horizons.org">Homepage</ulink> herunter und starten Sie es. Sobald die Auswahl der Komponenten erscheint, entfernen Sie den Haken vor all den Bestandteilen, die bereits <emphasis>sicher</emphasis> auf Ihrem System installiert sind. Lassen Sie im Zweifelsfall einfach alle Haken stehen. Befolgen Sie ansonsten die gewohnten Anweisungen der Installationsroutine.</para>
+				</sect2>
+				<sect2><title>Inbetriebnahme</title>
+					<para>Um das Spiel zu starten können Sie wahlweise auf das Desktopsymbol klicken oder das Spiel über das Startmenü starten.</para>
+				</sect2>
+			</sect1>
+			<!-- Linux -->
+			<sect1><title>Linux</title>
+				<sect2><title>Installation</title>
+					<para>[TODO]</para>
+					<example><title>Sample code</title>
+						<programlisting>print "Hello, world!"</programlisting>
+					</example>
+				</sect2>
+				<sect2><title>Inbetriebnahme</title>
+					<para>[TODO]</para>
+				</sect2>
+			</sect1>
+		</chapter>
+
+<!-- Kapitel: Hauptmenü -->		
+		<chapter id="mainmenu"><title>Das Hauptmenü</title>
+			<para>Sie haben es nun also geschafft, das Spiel zu starten. In diesem Abschnitt wird Ihnen beschrieben, welche Funktionen das Hauptmenü bietet und wie sie ein Spiel starten.</para>
+			<sect1><title>Der Startbildschirm</title>
+				<figure><title>Der Startbildschirm</title>
+					<mediaobject>
+						<imageobject>
+							<imagedata fileref="images/de/mainmenu/mainmenu.jpg" format="jpg" />
+						</imageobject>
+					</mediaobject>
+				</figure>
+				<para>Sobald Sie das Spiel starten, werden Sie diesen Bildschirm sehen. Er zeigt ein Steuerrad mit mehreren Knöpfen, auf die Sie klicken können. Außerdem wird unten rechts Ihre Versionsnummer angezeigt. Die Knöpfe haben von oben im Uhrzeigersinn folgende Bedeutungen:
+					<itemizedlist spacing="compact">
+						<listitem>Neues Spiel beginnen</listitem>
+						<listitem>Mehrspielermodus</listitem>
+						<listitem>Einstellungen</listitem>
+						<listitem>Hilfe</listitem>
+						<listitem>Spiel verlassen</listitem>
+						<listitem>Die Glocke läuten</listitem>
+						<listitem>Liste der Mitwirkenden</listitem>
+						<listitem>Spielstand laden</listitem>
+		 			</itemizedlist>
+		 			Diese Auswahlmöglichkeiten werden im Folgenden detailiert beschrieben.
+				</para>
+			</sect1>
+			
+			<!-- Menü neues Spiel -->
+			<sect1><title>Neues Spiel</title>
+				<para>Hier haben Sie die Möglichkeit, ein neues Spiel zu beginnen. Zur Wahl stehen drei Spielmodi, die im Folgenden beschrieben werden.</para>
+				<!-- Szenarien und Kampagnen -->
+				<sect2><title>Szenarien und Kampagnen</title>
+					<para>In diesem Spielmodus ist es Ihre Aufgabe, ein festgelegtes Spielziel zu erreichen. Es wird unterschieden zwischen Einzelmissionen und ganzen Kampagnen mit einer durchgehenden Rahmengeschichte.</para>
+					<important><title>Wichtiger Hinweis</title>
+						<para>Beachten Sie, dass in Missionen einige Spielelemente deaktiviert sein könnten. Teilweise werden einzelen Funktionen erst nach und nach freigeschaltet.</para>
+					</important>
+					<!-- Tutorial -->
+					<sect3><title>Das Tutorium</title>
+						<para>Das Tutorium ist eine spezielle Mission, die Sie in das Spiel einführt. Hier wird Ihnen Schritt für Schritt erklärt, wie sie Unknown Horizons spielen. Das Spiel reagiert auf Spielereingaben und passt sich Ihrem Spieltempo an.</para>
+					</sect3>
+				</sect2>
+				<!-- Zufallskarte -->
+				<sect2><title>Zufallskarte</title>
+					<para>Dieser Modus erzeugt eine Zufallskarte, auf der Sie spielen können.</para>
+					<note><title>Bitte beachten Sie …</title>
+						<para>Dieser Modus befinden sich noch in einem Teststadium. Rechnen Sie also mit auftretenden Fehlern. Außerdem funktioniert die Darstellung des Strandes noch nicht korrekt.</para>
+					</note>
+				</sect2>
+				<!-- vorgegebene Karte -->
+				<sect2><title>Spiel auf einer vorgegebenen Karte</title>
+					<para>Wählen Sie aus einer der mitgeliferten Karten aus.</para>
+				</sect2>
+			</sect1>
+			
+			<!-- Mehrspieler -->
+			<sect1><title>Der Mehrspielermodus</title>
+				<para>In diesem Modus können Sie über das Netzwerk oder das Internet gegen andere Spieler auf der ganzen Welt antreten.</para>
+				<note><title>Bitte beachten Sie …</title>
+						<para>Dieser Modus wurde noch nicht implementiert.</para>
+				</note>
+			</sect1>
+			
+			<!-- Einstellungen -->
+			<sect1><title>Der Einstellungsdialog</title>
+				<para>In diesem Dialogfeld können Sie verschiedene spielspezifische Einstellungen treffen.</para>
+				<!-- Grafik -->
+				<sect2><title>Grafikeinstellungen</title>
+					<para>Hier können Sie die Bildschirmauflösung und die Farbtiefe wählen. Sofern das Spiel bei Ihnen seltsam und unnatürlich aussieht können Sie auch versuchen, einen anderen Renderer einzustellen. Außerdem können sie wählen, ob das Spiel im Vollbildmodus oder als Fenster laufen soll.</para>
+					<important><title>Wichtiger Hinweis</title>
+						<para>Falls Sie das Spiel im Vollbildmodus spielen, sollten Sie die Auflösung an ihre <emphasis>native Bildschirmauflösung</emphasis> anpassen. Diese finden Sie im Handbuch Ihres Bildschirmes. Dadurch erhalten Sie das bestmöglichste Bild und verhindern ausgefranste Kanten oder eine verwischet Darstellung.</para>
+					</important>
+				</sect2>
+				<!-- Sound -->
+				<sect2><title>Audioeinstellungen</title>
+				<para>Hier können Sie unabhängig voneinander die Lautstärke der Musik und der Geräusche regeln. Außerdem können sie den Ton komplett abstellen.</para>
+				</sect2>
+				<!-- Speichern -->
+				<sect2><title>Speicherungsspezifische Einstellungen</title>
+				<para>Unknown Horizons unterstützt <foreignphrase>Autosave</foreignphrase>, also das automatische Speichern des Spielstandes nach einer bestimmten abgelaufenen Zeit. Hier können Sie das Intervall in Minuten frei wählen. Außerdem können Sie auswählen, wie viele Spielstände gespeichert werden sollen, bevor der Älteste überschrieben wird.</para>
+				<para>Außerdem haben Sie die Möglichkeit, während des Spieles durch betätigen einer Taste ein sogenanntes <foreignphrase>Quicksave</foreignphrase> anzugelen. Diese Spielstände können durch drücken einer anderen Taste unmittelbar per Tastendruck wieder geladen werden. Wählen Sie hier aus, wie viele Quicksaves maximal angelegt werden sollen, bevor der älteste Spielstand überschrieben werden soll.</para>
+				</sect2>
+				<!-- Sprache -->
+				<sect2><title>Spracheinstellungen</title>
+				<para>Das Spiel wird beim ersten Start vermutlich alle Texte in englischer Sprache anzeigen. Hier können Sie das Spiel auf deutsch und in zahlreiche anderen Sprachen umstellen.</para>
+				</sect2>
+			</sect1>
+		</chapter>
+		
+<!-- Kapitel: TODO -->		
+		<chapter><title>TODO</title>
+			<para>TODO</para>
+		</chapter>
+
+<!-- Anhang 1: Einheitenliste -->		
+		<appendix><title>Einheiten</title>
+			<para>Schiff</para>
+		</appendix>
+		
+	</book>
+</set>
