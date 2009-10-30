@@ -103,7 +103,7 @@
 				</sect2>
 				<!-- vorgegebene Karte -->
 				<sect2><title>Spiel auf einer vorgegebenen Karte</title>
-					<para>Wählen Sie aus einer der mitgeliferten Karten aus.</para>
+					<para>Wählen Sie aus einer der mitgelieferten Karten aus.</para>
 				</sect2>
 			</sect1>
 			
@@ -132,11 +132,11 @@
 				<!-- Speichern -->
 				<sect2><title>Speicherungsspezifische Einstellungen</title>
 				<para>Unknown Horizons unterstützt <foreignphrase>Autosave</foreignphrase>, also das automatische Speichern des Spielstandes nach einer bestimmten abgelaufenen Zeit. Hier können Sie das Intervall in Minuten frei wählen. Außerdem können Sie auswählen, wie viele Spielstände gespeichert werden sollen, bevor der Älteste überschrieben wird.</para>
-				<para>Außerdem haben Sie die Möglichkeit, während des Spieles durch betätigen einer Taste ein sogenanntes <foreignphrase>Quicksave</foreignphrase> anzugelen. Diese Spielstände können durch drücken einer anderen Taste unmittelbar per Tastendruck wieder geladen werden. Wählen Sie hier aus, wie viele Quicksaves maximal angelegt werden sollen, bevor der älteste Spielstand überschrieben werden soll.</para>
+				<para>Zudem haben Sie die Möglichkeit, während des Spieles durch betätigen einer Taste ein sogenanntes <foreignphrase>Quicksave</foreignphrase> anzulegen. Diese Spielstände können durch Drücken einer anderen Taste unmittelbar per Tastendruck wieder geladen werden. Wählen Sie hier aus, wie viele Quicksaves maximal angelegt werden sollen, bevor der älteste Spielstand überschrieben werden soll.</para>
 				</sect2>
 				<!-- Sprache -->
 				<sect2><title>Spracheinstellungen</title>
-				<para>Das Spiel wird beim ersten Start vermutlich alle Texte in englischer Sprache anzeigen. Hier können Sie das Spiel auf deutsch und in zahlreiche anderen Sprachen umstellen.</para>
+				<para>Das Spiel wird beim ersten Start in der Standartsprache Ihres Betriebssystems starten. Hier können Sie das Spiel auf deutsch und in zahlreiche andere Sprachen umstellen.</para>
 				</sect2>
 			</sect1>
 		</chapter>
@@ -148,7 +148,19 @@
 
 <!-- Anhang 1: Einheitenliste -->		
 		<appendix><title>Einheiten</title>
-			<para>Schiff</para>
+			<para>Spielerschiff - Schiffstyp: Huker</para>
+			<para>Dieses Schiff steht Ihnen bei Spielbeginn zur verfügung.
+			Es dient dem Gründen einer neuen Siedlung und dem Transport von Waren.
+			Am Anfang jeden Spieles ist mit allen wichtigen Rohstoffen beladen, die zur Siedlungsgründung notwendig sind.</para>
+
+
+			<title>Unabhängige Einheiten</title>
+			<para>Dies umfasst alle Einheiten, die nicht vom Spieler gesteuert werden können.</para>
+			<para>Der Freie Händler - Schiffstyp: Brigantine</para>
+			<para>Der freie Händler fährt mit seiner Brigantine umher und steuert von Zeit zu Zeit die Häfen an. Man kann mir ihm über den 				Außenposten, den Hauptplatz oder ein Lagerzelt handeln, jedoch unterliegt dies vollkommen der Willkür des Händlers. Es ist seine 				Freiheit darüber zu entscheiden ob er einen Handel annimmt oder auch nicht.<tip>Als kleiner Hinweis sei hier nochmals auf die 				Funktionsweise des Signal Feuers hingewiesen. Das Feuer leuchtet dem Händler den Weg, sobald er in den Radius dessen gelangt 				steuert er immer Euren Hafen an, wodurch sich die Wahrscheinlichkeit erhöht, dass es zu einem Handel kommt.</tip></para>
+			
+<!--			<para>Piraten - Schiffstyp: Schaluppe </para>
+			<para>Die Piraten sind auf allen uns bekannten Wassern präsent, sie haben es auf Kaperung und Plünderung abgesehen. Seit also auf 				der Hut. Bisher haben gibt es noch keine Meldungen von Übergriffen in unseren Gefilden, doch das ist nur eine Frage der Zeit ... 				solange bis es jemand implementiert hat ^^</para> -->
 		</appendix>
 		
 	</book>
