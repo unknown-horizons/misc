@@ -42,8 +42,13 @@
 			</sect1>
 			<!-- Linux -->
 			<sect1><title>Linux</title>
-				<sect2><title>Installation</title>
-					<para>[TODO]</para>
+				<title>Releasepakete</title>
+				<para>Die Releasepaket können einfach mir jedem Archivmanager oder per Terminal mit den Programmen tar und gzip entpackt 					werden. Dazu reicht folgender Befehl:</para>
+				<programlisting>tar xvfz $paketname.tar.gz</programlisting>
+				<para>Nun kann man das Spiel starten, indem man im Terminal in den entsprechend gerade entpackten Ordner wechselt und dann folgendes ausführt</para>
+				<programlisting>tar xvfz $paketname.tar.gz</programlisting>
+<title>Reposority für Ubuntu/Debian</title>
+					<para></para>
 					<example><title>Sample code</title>
 						<programlisting>print "Hello, world!"</programlisting>
 					</example>
@@ -141,13 +146,13 @@
 			</sect1>
 		</chapter>
 		
-<!-- Kapitel: TODO -->		
+<!-- Kapitel: TODO 	
 		<chapter><title>TODO</title>
 			<para>TODO</para>
-		</chapter>
-
-<!-- Anhang 1: Einheitenliste -->		
-		<appendix><title>Einheiten</title>
+		</chapter> -->	
+		
+		<chapter>
+			<title>Einheiten</title>
 			<para>Spielerschiff - Schiffstyp: Huker</para>
 			<para>Dieses Schiff steht Ihnen bei Spielbeginn zur verfügung.
 			Es dient dem Gründen einer neuen Siedlung und dem Transport von Waren.
@@ -155,13 +160,110 @@
 
 
 			<title>Unabhängige Einheiten</title>
-			<para>Dies umfasst alle Einheiten, die nicht vom Spieler gesteuert werden können.</para>
+			<para>Dies umfasst alle Einheiten, die nicht vom Spieler gesteuert werden können. Diesen Einheiten unterliegt eine künstliche 				Intelligenz, welche es ihnen möglich macht auf bestimmte Ereignisse mit Actionen zu reagieren.</para>
 			<para>Der Freie Händler - Schiffstyp: Brigantine</para>
 			<para>Der freie Händler fährt mit seiner Brigantine umher und steuert von Zeit zu Zeit die Häfen an. Man kann mir ihm über den 				Außenposten, den Hauptplatz oder ein Lagerzelt handeln, jedoch unterliegt dies vollkommen der Willkür des Händlers. Es ist seine 				Freiheit darüber zu entscheiden ob er einen Handel annimmt oder auch nicht.<tip>Als kleiner Hinweis sei hier nochmals auf die 				Funktionsweise des Signal Feuers hingewiesen. Das Feuer leuchtet dem Händler den Weg, sobald er in den Radius dessen gelangt 				steuert er immer Euren Hafen an, wodurch sich die Wahrscheinlichkeit erhöht, dass es zu einem Handel kommt.</tip></para>
 			
 <!--			<para>Piraten - Schiffstyp: Schaluppe </para>
 			<para>Die Piraten sind auf allen uns bekannten Wassern präsent, sie haben es auf Kaperung und Plünderung abgesehen. Seit also auf 				der Hut. Bisher haben gibt es noch keine Meldungen von Übergriffen in unseren Gefilden, doch das ist nur eine Frage der Zeit ... 				solange bis es jemand implementiert hat ^^</para> -->
-		</appendix>
+		</chapter>	
+
+		<chapter>		 
+		<title>Tastenkürzel</title>
+		<para>Unknown Horizons bringt einige nützliche Tastenkürzel mit sich. Diese lassen sich auch innerhalb des Spieles oder dem Hauptmenü 			jederzeit anzeigen, indem man die Taste F1 drückt oder auf das Fragezeichen klickt.</para>
+		<table frame='none'>
+			<tgroup cols="2">
+			<thead>       
+				<row>
+				<entry>Taste</entry><entry>Funktion</entry>
+				</row>
+			</thead>
+			<tbody>
+         			<row>
+				<entry>←</entry><entry>Nach links scrollen</entry>
+				</row>
+
+				<row>
+				<entry>→</entry><entry>Nach rechts scrollen</entry>
+				</row>
+
+				<row>
+        			<entry>↑</entry><entry>Nach oben scrollen</entry>
+				</row>
+
+				<row>
+				<entry>↓</entry><entry>Nach unten scrollen</entry>
+				</row>
+
+				<row>
+				<entry>;</entry><entry>Gebäude nach links drehen</entry>
+				</row>
+
+				<row>
+				<entry>.</entry><entry>Gebäude nach rechts drehen</entry>
+				</row>
 		
+				<row>
+				<entry>B</entry><entry>Baumenü ein-/ausblenden</entry>
+				</row>
+
+				<row>
+				<entry>F1</entry><entry>Hilfe anzeigen</entry>
+				</row>
+
+				<row>
+				<entry>F5</entry><entry>Schnelles Speichern (Quicksave)</entry>
+				</row>
+
+				<row>
+				<entry>F9</entry><entry>Schnelles Laden (Quickload)</entry>
+				</row>
+
+				<row>
+				<entry>F10</entry><entry>Konsole ein-/ausschalten</entry>
+				</row>
+				
+				<row>
+				<entry>Esc</entry><entry>Spielmenü anzeigen</entry>
+				</row>
+				
+				<row>
+				<entry>G</entry><entry>Gitternetz ein-/ausschalten</entry>
+				</row>
+
+				<row>
+				<entry>X</entry><entry>Abrissbirne</entry>
+				</row>	
+
+				<row>
+				<entry>P</entry><entry>Pause</entry>
+				</row>
+
+				<row>
+				<entry>+</entry><entry>Schneller</entry>
+				</row>
+
+				<row>
+				<entry>-</entry><entry>Langsamer</entry>
+				</row>
+
+				<row>
+				<entry>S</entry><entry>Bildschirmphoto</entry>
+				</row>
+
+				<row>
+				<entry>D</entry><entry>Python Debugger starten</entry>
+				</row>
+
+				<row>
+				<entry>⇧</entry><entry>Ermöglicht, bei gedrückt halten, das Bauen mehrerer gleicher Gebäude nacheinander</entry>
+				</row>
+				
+			</tbody>
+			</tgroup>
+		</table> 
+		</chapter>
+
+
 	</book>
 </set>
