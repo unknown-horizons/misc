@@ -145,7 +145,18 @@
 				</sect2>
 			</sect1>
 		</chapter>
-		
+		<chapter><!--Ingame -->	
+		<!--Menü -->
+		Hier wird das Ingame Menü Schritt für Schritt von links beginnend im Uhrzeigersinn vorgestellt.
+		<title>Rohstoffanzeige</title>
+		In der Anzeige werden die Mengen der wichtigsten Rohstoffe auf der aktuellen Insel angezeigt, zudem ist links die Geldanzeige sichtbar, welche im Gegensatz für alle Inseln gilt.
+		<!--Bild-->
+		<title>Inselanzeige</title>
+		Hier kann man den Namen sowie die Einwohnerzahl der jeweiligen Insel ablesen, um die Bevölkerungsentwicklung immer verfolgen zu können.
+		<title>Minimap</title>
+		Die Minimap stellt die komplette Landkarte im Kleinformat dar, dabei wird der vom Spieler besiedelte Bereich auf Inseln, entsprechend der ausgewählten Spielerfarbe, farbig dargestellt.
+
+		</chapter>
 <!-- Kapitel: TODO 	
 		<chapter><title>TODO</title>
 			<para>TODO</para>
@@ -155,14 +166,13 @@
 			<title>Einheiten</title>
 			<para>Spielerschiff - Schiffstyp: Huker</para>
 			<para>Dieses Schiff steht Ihnen bei Spielbeginn zur verfügung.
-			Es dient dem Gründen einer neuen Siedlung und dem Transport von Waren.
-			Am Anfang jeden Spieles ist mit allen wichtigen Rohstoffen beladen, die zur Siedlungsgründung notwendig sind.</para>
+			Es dient dem Gründen einer neuen Siedlung und dem Transport von Waren. Am Anfang jeden Spieles ist mit allen wichtigen Rohstoffen beladen, die zur Siedlungsgründung notwendig sind.</para>
 
 
 			<title>Unabhängige Einheiten</title>
-			<para>Dies umfasst alle Einheiten, die nicht vom Spieler gesteuert werden können. Diesen Einheiten unterliegt eine künstliche 				Intelligenz, welche es ihnen möglich macht auf bestimmte Ereignisse mit Actionen zu reagieren.</para>
+			<para>Dies umfasst alle Einheiten, die nicht vom Spieler gesteuert werden können. Diesen Einheiten unterliegt eine künstliche Intelligenz, welche es ihnen möglich macht auf bestimmte Ereignisse mit Actionen zu reagieren.</para>
 			<para>Der Freie Händler - Schiffstyp: Brigantine</para>
-			<para>Der freie Händler fährt mit seiner Brigantine umher und steuert von Zeit zu Zeit die Häfen an. Man kann mir ihm über den 				Außenposten, den Hauptplatz oder ein Lagerzelt handeln, jedoch unterliegt dies vollkommen der Willkür des Händlers. Es ist seine 				Freiheit darüber zu entscheiden ob er einen Handel annimmt oder auch nicht.<tip>Als kleiner Hinweis sei hier nochmals auf die 				Funktionsweise des Signal Feuers hingewiesen. Das Feuer leuchtet dem Händler den Weg, sobald er in den Radius dessen gelangt 				steuert er immer Euren Hafen an, wodurch sich die Wahrscheinlichkeit erhöht, dass es zu einem Handel kommt.</tip></para>
+			<para>Der freie Händler fährt mit seiner Brigantine umher und steuert von Zeit zu Zeit die Häfen an. Man kann mir ihm über den Außenposten, den Hauptplatz oder ein Lagerzelt handeln, jedoch unterliegt dies vollkommen der Willkür des Händlers. Es ist seine Freiheit darüber zu entscheiden ob er einen Handel annimmt oder auch nicht.<tip>Als kleiner Hinweis sei hier nochmals auf die Funktionsweise des Signal Feuers hingewiesen. Das Feuer leuchtet dem Händler den Weg, sobald er in den Radius dessen gelangt steuert er immer Euren Hafen an, wodurch sich die Wahrscheinlichkeit erhöht, dass es zu einem Handel kommt.</tip></para>
 			
 <!--			<para>Piraten - Schiffstyp: Schaluppe </para>
 			<para>Die Piraten sind auf allen uns bekannten Wassern präsent, sie haben es auf Kaperung und Plünderung abgesehen. Seit also auf 				der Hut. Bisher haben gibt es noch keine Meldungen von Übergriffen in unseren Gefilden, doch das ist nur eine Frage der Zeit ... 				solange bis es jemand implementiert hat ^^</para> -->
@@ -170,7 +180,7 @@
 
 		<chapter>		 
 		<title>Tastenkürzel</title>
-		<para>Unknown Horizons bringt einige nützliche Tastenkürzel mit sich. Diese lassen sich auch innerhalb des Spieles oder dem Hauptmenü 			jederzeit anzeigen, indem man die Taste F1 drückt oder auf das Fragezeichen klickt.</para>
+		<para>Unknown Horizons bringt einige nützliche Tastenkürzel mit sich. Diese lassen sich auch innerhalb des Spieles oder dem Hauptmenü jederzeit anzeigen, indem man die Taste F1 drückt oder auf das Fragezeichen klickt.</para>
 		<table frame='none'>
 			<tgroup cols="2">
 			<thead>       
