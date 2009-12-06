@@ -17,10 +17,10 @@
 				<holder>The Unknown Horizons Team</holder>
 			</copyright>
 			<legalnotice>
-				<para>This book is released under the conditions of BLA.</para>
+				<para>This book is released under the conditions of BLA.</para><!--nicht vollständig-->
 			</legalnotice>
 		</bookinfo>
-		
+<!--Inhaltsverzeichnis sollte noch gesetzt werden-->		
 		<!-- Vorwort -->
 		<preface><title>Vorwort</title>
 			<para>Herzlich willkommen …</para>
@@ -71,7 +71,7 @@
 					</mediaobject>
 				</figure>
 				<para>Sobald Sie das Spiel starten, werden Sie diesen Bildschirm sehen. Er zeigt ein Steuerrad mit mehreren Knöpfen, auf die Sie klicken können. Außerdem wird unten rechts Ihre Versionsnummer angezeigt. Die Knöpfe haben von oben im Uhrzeigersinn folgende Bedeutungen:
-					<itemizedlist spacing="compact">
+					<itemizedlist spacing="compact"> <!--Anker setzen -->
 						<listitem>Neues Spiel beginnen</listitem>
 						<listitem>Mehrspielermodus</listitem>
 						<listitem>Einstellungen</listitem>
@@ -89,7 +89,7 @@
 			<sect1><title>Neues Spiel</title>
 				<para>Hier haben Sie die Möglichkeit, ein neues Spiel zu beginnen. Zur Wahl stehen drei Spielmodi, die im Folgenden beschrieben werden.</para>
 				<!-- Szenarien und Kampagnen -->
-				<sect2><title>Szenarien und Kampagnen</title>
+				<sect2 id="campaign"><title>Szenarien und Kampagnen</title>
 					<para>In diesem Spielmodus ist es Ihre Aufgabe, ein festgelegtes Spielziel zu erreichen. Es wird unterschieden zwischen Einzelmissionen und ganzen Kampagnen mit einer durchgehenden Rahmengeschichte.</para>
 					<important><title>Wichtiger Hinweis</title>
 						<para>Beachten Sie, dass in Missionen einige Spielelemente deaktiviert sein könnten. Teilweise werden einzelen Funktionen erst nach und nach freigeschaltet.</para>
@@ -145,40 +145,84 @@
 				</sect2>
 			</sect1>
 		</chapter>
-		<chapter><!--Ingame -->	
-		<!--Menü -->
-		Hier wird das Ingame Menü Schritt für Schritt von links beginnend im Uhrzeigersinn vorgestellt.
+<!--Oberfläche, erläuterung zu den einzelnen Menüs, Baumenü etc. wird in einem weiterem Kapitel beschrieben-->
+		<chapter id="ingame_menu">	
+		<para>Hier wird das Spielmenü, welches während des Spiels zu sehen ist, Schritt für Schritt von links beginnend im Uhrzeigersinn vorgestellt.</para>
+		<sect1>
 		<title>Rohstoffanzeige</title>
-		In der Anzeige werden die Mengen der wichtigsten Rohstoffe auf der aktuellen Insel angezeigt, zudem ist links die Geldanzeige sichtbar, welche im Gegensatz für alle Inseln gilt.
+		<para>Beginnen wir mit der Rohstoffanzeige sie gibt die Mengen der wichtigsten Rohstoffe auf der aktuellen Insel an, zudem ist links die Geldanzeige sichtbar, welche im Gegensatz zud en Rohstoffen für alle Inseln gilt.</para>
+		</sect1>
 		<!--Bild-->
 		<title>Inselanzeige</title>
-		Hier kann man den Namen sowie die Einwohnerzahl der jeweiligen Insel ablesen, um die Bevölkerungsentwicklung immer verfolgen zu können.
-		<title>Minimap</title>
-		Die Minimap stellt die komplette Landkarte im Kleinformat dar, dabei wird der vom Spieler besiedelte Bereich auf Inseln, entsprechend der ausgewählten Spielerfarbe, farbig dargestellt.
+		<para>Hier kann man den Namen sowie die Einwohnerzahl der jeweiligen Insel ablesen, somit lässt sich die Bevölkerungsentwicklung immer genaustens verfolgen.</para>
+		<title>Minimap</title><!-- Anker zu Navigation siehe Basics-->
+		<para>Die Minimap stellt die komplette Landkarte im Kleinformat dar, dabei wird der vom Spieler besiedelte Bereich auf Inseln, entsprechend der ausgewählten Spielerfarbe, farbig dargestellt. Sie dient dazu, schnell einen Überblikc über möglich Einheitenbewegung des Gegners etc. zu erhlaten. Die Karte ist von mehreren Icons umgeben, diese sind von links nach rechts mit folgenden Eigenschaften belegt:</para>
+<table frame='none'>
+			<tgroup cols="2">
+			<thead>       
+				<row>
+				<entry>Icon</entry><entry>Funktion und Verweis zu jeweiligem Tastenkürzel</entry>
+				</row>
+			</thead>
+			<tbody>
+<!--!!!Bilder müssen noch eingefügt werden!!! -->
+         			<row>
+				<entry></entry><entry>Startet dem Abrissmodus, in dem man Gebäude abreißen kann<xref linkend="key15"></entry>
+				</row>
+				<row>
+				<entry></entry><entry>Platzhalter - Besitzt zur Zeit noch keine Funktion</entry>
+				</row>
+				<row>
+				<entry></entry><entry>Öffnet das Baumenü<xref linkend="key8"></entry>
+				</row>
+				<row>
+				<entry></entry><entry>Öffnet die Hilfe und pausiert während dessen das Spiel<xref linkend="key9"></entry>
+				</row>
+				<row>
+				<entry></entry><entry>Öffnet das Hauptmenü<xref linkend="key13"></entry>
+				</row>			
+			</tbody>
+			</tgroup>
+		</table>
+		<sect2>
+		<title>Anzeigebereich</title>
+		<para>Dieser Bereich ist in der Höhe variable und zeigt abhängig von dem ausgewähltem Gebäude oder Einheit deren für den Spieler sichtbare Informationen an. Links am Anzeigebereiche zeiht man Tabs, die Anzahl ist unterschiedlich, und kann von bestimmten Faktoren abhängig sein<!-- Siehe Baumenü  basixs-->. Hier sind zwei Beispiele einmal ein Wohnzelt und ein Schiff des Typs Huker.</para>
+<!-- Bilder !!!--> 
+		</sect2>
+		</chapter>
+		
+		<chapter id="basics">
+		<title>Grundlagen</title>
+		<para>In diesem Kapitel sollen die Grundlagen vermittelt werden, welche von Nöten sind um Unknown Horizons zu spielen. Dabei wird Schritt für Schriit auf die einzelnen Möglichkeiten der Spielführung eingegangen.</para>
+		<tip>
+		<para>Das Tutorium bietet ebenfalls einen guten Einstieg, man findet es bei den Szenarien und Kampagnen<xref linkend="campaign"></para>
+		</tip>
+		<sect1>
+		<title>Navigation</title>
+		<para>Die Navigation beschränkt sich zur Zeit nur auf Schiffe, da es bisher noch keine anderen Einheiten gibt, welche aktiv vom Spieler navigiert werden können.</para>
+		</sect1>
 
 		</chapter>
-<!-- Kapitel: TODO 	
-		<chapter><title>TODO</title>
-			<para>TODO</para>
-		</chapter> -->	
-		
-		<chapter>
+
+		<chapter id="units">
+			<sect1>
 			<title>Einheiten</title>
 			<para>Spielerschiff - Schiffstyp: Huker</para>
 			<para>Dieses Schiff steht Ihnen bei Spielbeginn zur verfügung.
 			Es dient dem Gründen einer neuen Siedlung und dem Transport von Waren. Am Anfang jeden Spieles ist mit allen wichtigen Rohstoffen beladen, die zur Siedlungsgründung notwendig sind.</para>
-
-
+			</sect1>
+			<sect2>
 			<title>Unabhängige Einheiten</title>
 			<para>Dies umfasst alle Einheiten, die nicht vom Spieler gesteuert werden können. Diesen Einheiten unterliegt eine künstliche Intelligenz, welche es ihnen möglich macht auf bestimmte Ereignisse mit Actionen zu reagieren.</para>
 			<para>Der Freie Händler - Schiffstyp: Brigantine</para>
 			<para>Der freie Händler fährt mit seiner Brigantine umher und steuert von Zeit zu Zeit die Häfen an. Man kann mir ihm über den Außenposten, den Hauptplatz oder ein Lagerzelt handeln, jedoch unterliegt dies vollkommen der Willkür des Händlers. Es ist seine Freiheit darüber zu entscheiden ob er einen Handel annimmt oder auch nicht.<tip>Als kleiner Hinweis sei hier nochmals auf die Funktionsweise des Signal Feuers hingewiesen. Das Feuer leuchtet dem Händler den Weg, sobald er in den Radius dessen gelangt steuert er immer Euren Hafen an, wodurch sich die Wahrscheinlichkeit erhöht, dass es zu einem Handel kommt.</tip></para>
+			</sect2>
 			
 <!--			<para>Piraten - Schiffstyp: Schaluppe </para>
 			<para>Die Piraten sind auf allen uns bekannten Wassern präsent, sie haben es auf Kaperung und Plünderung abgesehen. Seit also auf 				der Hut. Bisher haben gibt es noch keine Meldungen von Übergriffen in unseren Gefilden, doch das ist nur eine Frage der Zeit ... 				solange bis es jemand implementiert hat ^^</para> -->
 		</chapter>	
 
-		<chapter>		 
+		<chapter id="hotkeys">		 
 		<title>Tastenkürzel</title>
 		<para>Unknown Horizons bringt einige nützliche Tastenkürzel mit sich. Diese lassen sich auch innerhalb des Spieles oder dem Hauptmenü jederzeit anzeigen, indem man die Taste F1 drückt oder auf das Fragezeichen klickt.</para>
 		<table frame='none'>
@@ -190,83 +234,83 @@
 			</thead>
 			<tbody>
          			<row>
-				<entry>←</entry><entry>Nach links scrollen</entry>
+				<entry><anchor id="key2">←</entry><entry>Nach links scrollen</entry>
 				</row>
 
 				<row>
-				<entry>→</entry><entry>Nach rechts scrollen</entry>
+				<entry><anchor id="key3">→</entry><entry>Nach rechts scrollen</entry>
 				</row>
 
 				<row>
-        			<entry>↑</entry><entry>Nach oben scrollen</entry>
+        			<entry><anchor id="key4">↑</entry><entry>Nach oben scrollen</entry>
 				</row>
 
 				<row>
-				<entry>↓</entry><entry>Nach unten scrollen</entry>
+				<entry><anchor id="key5">↓</entry><entry>Nach unten scrollen</entry>
 				</row>
 
 				<row>
-				<entry>;</entry><entry>Gebäude nach links drehen</entry>
+				<entry><anchor id="key6">;</entry><entry>Gebäude nach links drehen</entry>
 				</row>
 
 				<row>
-				<entry>.</entry><entry>Gebäude nach rechts drehen</entry>
+				<entry><anchor id="key7">.</entry><entry>Gebäude nach rechts drehen</entry>
 				</row>
 		
 				<row>
-				<entry>B</entry><entry>Baumenü ein-/ausblenden</entry>
+				<entry><anchor id="key8">B</entry><entry>Baumenü ein-/ausblenden</entry>
 				</row>
 
 				<row>
-				<entry>F1</entry><entry>Hilfe anzeigen</entry>
+				<entry><anchor id="key9">F1</entry><entry>Hilfe anzeigen + Pause</entry>
 				</row>
 
 				<row>
-				<entry>F5</entry><entry>Schnelles Speichern (Quicksave)</entry>
+				<entry><anchor id="key10">F5</entry><entry>Schnelles Speichern - Quicksave</entry>
 				</row>
 
 				<row>
-				<entry>F9</entry><entry>Schnelles Laden (Quickload)</entry>
+				<entry><anchor id="key11">F9</entry><entry>Schnelles Laden - Quickload</entry>
 				</row>
 
 				<row>
-				<entry>F10</entry><entry>Konsole ein-/ausschalten</entry>
+				<entry><anchor id="key12">F10</entry><entry>Konsole ein-/ausschalten</entry>
 				</row>
 				
 				<row>
-				<entry>Esc</entry><entry>Spielmenü anzeigen</entry>
+				<entry><anchor id="key13">Esc</entry><entry>Spielmenü anzeigen</entry>
 				</row>
 				
 				<row>
-				<entry>G</entry><entry>Gitternetz ein-/ausschalten</entry>
+				<entry><anchor id="key14">G</entry><entry>Gitternetz ein-/ausschalten</entry>
 				</row>
 
 				<row>
-				<entry>X</entry><entry>Abrissbirne</entry>
+				<entry><anchor id="key15">X</entry><entry>Abrissbirne</entry>
 				</row>	
 
 				<row>
-				<entry>P</entry><entry>Pause</entry>
+				<entry><anchor id="key16">P</entry><entry>Pause</entry>
 				</row>
 
 				<row>
-				<entry>+</entry><entry>Schneller</entry>
+				<entry><anchor id="key17">+</entry><entry>Schneller</entry>
 				</row>
 
 				<row>
-				<entry>-</entry><entry>Langsamer</entry>
+				<entry><anchor id="key18">-</entry><entry>Langsamer</entry>
 				</row>
 
 				<row>
-				<entry>S</entry><entry>Bildschirmphoto</entry>
+				<entry><anchor id="key19">S</entry><entry>Bildschirmphoto</entry>
 				</row>
 
 				<row>
-				<entry>D</entry><entry>Python Debugger starten</entry>
+				<entry><anchor id="key20">D</entry><entry>Python Debugger starten</entry>
 				</row>
 
 				<row>
-				<entry>⇧</entry><entry>Ermöglicht, bei gedrückt halten, das Bauen mehrerer gleicher Gebäude nacheinander</entry>
+				<entry><anchor id="key21">⇧</entry><entry>Ermöglicht, bei gedrückt halten, das Bauen mehrerer gleicher Gebäude nacheinander</entry>
 				</row>
 				
 			</tbody>
