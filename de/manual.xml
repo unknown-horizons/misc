@@ -20,7 +20,7 @@
 				<para>This book is released under the conditions of BLA.</para><!--nicht vollständig-->
 			</legalnotice>
 		</bookinfo>
-<!--Inhaltsverzeichnis sollte noch gesetzt werden-->		
+<!--Inhaltsverzeichnis sollte noch gesetzt werden, geht automatisch ???-->		
 		<!-- Vorwort -->
 		<preface><title>Vorwort</title>
 			<para>Herzlich willkommen …</para>
@@ -42,7 +42,7 @@
 			</sect1>
 			<!-- Linux -->
 			<sect1><title>Linux</title>
-				<title>Releasepakete</title>
+				<sect1><title>Releasepakete</title>
 				<para>Die Releasepaket können einfach mir jedem Archivmanager oder per Terminal mit den Programmen tar und gzip entpackt 					werden. Dazu reicht folgender Befehl:</para>
 				<programlisting>tar xvfz $paketname.tar.gz</programlisting>
 				<para>Nun kann man das Spiel starten, indem man im Terminal in den entsprechend gerade entpackten Ordner wechselt und dann folgendes ausführt</para>
@@ -52,7 +52,7 @@
 					<example><title>Sample code</title>
 						<programlisting>print "Hello, world!"</programlisting>
 					</example>
-				</sect2>
+				</sect1>
 				<sect2><title>Inbetriebnahme</title>
 					<para>[TODO]</para>
 				</sect2>
@@ -167,19 +167,19 @@
 			<tbody>
 <!--!!!Bilder müssen noch eingefügt werden!!! -->
          			<row>
-				<entry></entry><entry>Startet dem Abrissmodus, in dem man Gebäude abreißen kann<xref linkend="key15"></entry>
+				<entry></entry><entry>Startet dem Abrissmodus, in dem man Gebäude abreißen kann<xref linkend="key15"/></entry>
 				</row>
 				<row>
 				<entry></entry><entry>Platzhalter - Besitzt zur Zeit noch keine Funktion</entry>
 				</row>
 				<row>
-				<entry></entry><entry>Öffnet das Baumenü<xref linkend="key8"></entry>
+				<entry></entry><entry>Öffnet das Baumenü<xref linkend="key8"/></entry>
 				</row>
 				<row>
-				<entry></entry><entry>Öffnet die Hilfe und pausiert während dessen das Spiel<xref linkend="key9"></entry>
+				<entry></entry><entry>Öffnet die Hilfe und pausiert während dessen das Spiel<xref linkend="key9"/></entry>
 				</row>
 				<row>
-				<entry></entry><entry>Öffnet das Hauptmenü<xref linkend="key13"></entry>
+				<entry></entry><entry>Öffnet das Hauptmenü<xref linkend="key13"/></entry>
 				</row>			
 			</tbody>
 			</tgroup>
@@ -195,7 +195,7 @@
 		<title>Grundlagen</title>
 		<para>In diesem Kapitel sollen die Grundlagen vermittelt werden, welche von Nöten sind um Unknown Horizons zu spielen. Dabei wird Schritt für Schriit auf die einzelnen Möglichkeiten der Spielführung eingegangen.</para>
 		<tip>
-		<para>Das Tutorium bietet ebenfalls einen guten Einstieg, man findet es bei den Szenarien und Kampagnen<xref linkend="campaign"></para>
+		<para>Das Tutorium bietet ebenfalls einen guten Einstieg, man findet es bei den Szenarien und Kampagnen<xref linkend="campaign"/></para>
 		</tip>
 		<sect1>
 		<title>Navigation</title>
@@ -234,83 +234,83 @@
 			</thead>
 			<tbody>
          			<row>
-				<entry><anchor id="key2">←</entry><entry>Nach links scrollen</entry>
+				<entry><anchor id="key2"/>←</entry><entry>Nach links scrollen</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key3">→</entry><entry>Nach rechts scrollen</entry>
+				<entry><anchor id="key3"/>→</entry><entry>Nach rechts scrollen</entry>
 				</row>
 
 				<row>
-        			<entry><anchor id="key4">↑</entry><entry>Nach oben scrollen</entry>
+        			<entry><anchor id="key4"/>↑</entry><entry>Nach oben scrollen</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key5">↓</entry><entry>Nach unten scrollen</entry>
+				<entry><anchor id="key5"/>↓</entry><entry>Nach unten scrollen</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key6">;</entry><entry>Gebäude nach links drehen</entry>
+				<entry><anchor id="key6"/>;</entry><entry>Gebäude nach links drehen</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key7">.</entry><entry>Gebäude nach rechts drehen</entry>
+				<entry><anchor id="key7"/>.</entry><entry>Gebäude nach rechts drehen</entry>
 				</row>
 		
 				<row>
-				<entry><anchor id="key8">B</entry><entry>Baumenü ein-/ausblenden</entry>
+				<entry><anchor id="key8"/>B</entry><entry>Baumenü ein-/ausblenden</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key9">F1</entry><entry>Hilfe anzeigen + Pause</entry>
+				<entry><anchor id="key9"/>F1</entry><entry>Hilfe anzeigen + Pause</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key10">F5</entry><entry>Schnelles Speichern - Quicksave</entry>
+				<entry><anchor id="key10"/>F5</entry><entry>Schnelles Speichern - Quicksave</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key11">F9</entry><entry>Schnelles Laden - Quickload</entry>
+				<entry><anchor id="key11"/>F9</entry><entry>Schnelles Laden - Quickload</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key12">F10</entry><entry>Konsole ein-/ausschalten</entry>
+				<entry><anchor id="key12"/>F10</entry><entry>Konsole ein-/ausschalten</entry>
 				</row>
 				
 				<row>
-				<entry><anchor id="key13">Esc</entry><entry>Spielmenü anzeigen</entry>
+				<entry><anchor id="key13"/>Esc</entry><entry>Spielmenü anzeigen</entry>
 				</row>
 				
 				<row>
-				<entry><anchor id="key14">G</entry><entry>Gitternetz ein-/ausschalten</entry>
+				<entry><anchor id="key14"/>G</entry><entry>Gitternetz ein-/ausschalten</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key15">X</entry><entry>Abrissbirne</entry>
+				<entry><anchor id="key15"/>X</entry><entry>Abrissbirne</entry>
 				</row>	
 
 				<row>
-				<entry><anchor id="key16">P</entry><entry>Pause</entry>
+				<entry><anchor id="key16"/>P</entry><entry>Pause</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key17">+</entry><entry>Schneller</entry>
+				<entry><anchor id="key17"/>+</entry><entry>Schneller</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key18">-</entry><entry>Langsamer</entry>
+				<entry><anchor id="key18"/>-</entry><entry>Langsamer</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key19">S</entry><entry>Bildschirmphoto</entry>
+				<entry><anchor id="key19"/>S</entry><entry>Bildschirmphoto</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key20">D</entry><entry>Python Debugger starten</entry>
+				<entry><anchor id="key20"/>D</entry><entry>Python Debugger starten</entry>
 				</row>
 
 				<row>
-				<entry><anchor id="key21">⇧</entry><entry>Ermöglicht, bei gedrückt halten, das Bauen mehrerer gleicher Gebäude nacheinander</entry>
+				<entry><anchor id="key21"/>⇧</entry><entry>Ermöglicht, bei gedrückt halten, das Bauen mehrerer gleicher Gebäude nacheinander</entry>
 				</row>
 				
 			</tbody>
