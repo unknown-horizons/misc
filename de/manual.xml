@@ -22,10 +22,12 @@
 	  BLA.</para><!--nicht vollständig-->
 	</legalnotice>
   </bookinfo>
+
   <preface>
 	<title>Vorwort</title>
 	<para>Herzlich willkommen …</para>
   </preface>
+
   <chapter>
 	<title>Installation und Inbetriebnahme</title>
 	<para>
@@ -97,7 +99,7 @@
 		  entsprechend gerade entpackten Ordner wechselt und dann
 		  folgendes ausführt
 		</para>
-		<programlisting>tar xvfz $paketname.tar.gz</programlisting>
+		<programlisting>python run_uh.py</programlisting>
 	  </sect2>
 	  <sect2>
 		<title>Reposority für Ubuntu/Debian</title>
@@ -140,6 +142,7 @@
 	  </sect2>
 	</sect1>
   </chapter>
+
   <chapter id="mainmenu">
 	<title>Das Hauptmenü</title>
 	<para>
@@ -340,7 +343,7 @@
 	  <para>
 		Beginnen wir mit der Rohstoffanzeige sie gibt die Mengen der
 		wichtigsten Rohstoffe auf der aktuellen Insel an, zudem ist
-		links die Geldanzeige sichtbar, welche im Gegensatz zud en
+		links die Geldanzeige sichtbar, welche im Gegensatz zu den
 		Rohstoffen für alle Inseln gilt.
 	  </para>
 	</sect1>
@@ -356,8 +359,8 @@
 	  Die Minimap stellt die komplette Landkarte im Kleinformat dar,
 	  dabei wird der vom Spieler besiedelte Bereich auf Inseln,
 	  entsprechend der ausgewählten Spielerfarbe, farbig
-	  dargestellt. Sie dient dazu, schnell einen Überblikc über
-	  möglich Einheitenbewegung des Gegners etc. zu erhlaten. Die
+	  dargestellt. Sie dient dazu, schnell einen Überblick über
+	  möglich Einheitenbewegung des Gegners etc. zu erhalten. Die
 	  Karte ist von mehreren Icons umgeben, diese sind von links nach
 	  rechts mit folgenden Eigenschaften belegt:
 	</para>
@@ -472,11 +475,38 @@
 	</sect2>
   </chapter>
 
-  <chapter id="economy">
-	<title>Wirtschaft</title>
-	<para>
-
-	</para>
+  <chapter id="resources">
+	<title>Rohstoffe</title>
+	<sect1>
+	  <title>Geld</title>
+	  <para>
+		Der Spieler erhält Geld aus mehreren Quellen. Einerseits
+		durch den Handel mit anderen Spielern sowie dem freien Händler
+		und durch regelmäßige Steuerabganben seiner Bürger. Diese
+		zahlen Steuern abhängig von ihrem Status und der Zufriedenheit
+		mit der aktuellen Versorgung.
+	  </para>
+	  <para>
+		Benötigt wird Geld zum Unterhalt der Meisten Betriebe, die der
+		Spieler auf seiner Insel ansiedelt, sowie zum Erwerb von Waren
+		bei den Mitspielern oder dem freien Händler.
+	  </para>
+	</sect1>
+	<sect1>
+	  <title>Holz</title>
+	  <para>
+		Holz wird im Spielverlauf vom Holzfäller produziert. Dabei
+		werden Bäume aus dem Einzugsgebiet gefällt und in einem
+		Weiteren Schritt zu Brettern verarbeitet, die dann abgeholt
+		und weiter verwertet werden können.
+	  </para>
+	  <para>
+		Holz ist eine der wichtigsten Resourcen zum Errichten von
+		Gebäuden. Auch die Inselbewohner verbrauchen Holz, wenn sie in
+		ihrem Status aufsteigen und ihre Unterkünfte
+		verbessern. Weitere Abnehmer von Holz sind z.B Werften.
+	  </para>
+	</sect1>
   </chapter>
 
   <chapter id="hotkeys">
