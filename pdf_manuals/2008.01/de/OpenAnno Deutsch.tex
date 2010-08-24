@@ -1,0 +1,493 @@
+%% Basierend auf einer TeXnicCenter-Vorlage von Mark Müller
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Wählen Sie die Optionen aus, indem Sie % vor der Option entfernen  
+% Dokumentation des KOMA-Script-Packets: scrguide
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optionen zum Layout des Buchs                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[
+a5paper,							% alle weiteren Papierformat einstellbar
+%landscape,						% Querformat
+%10pt,								% Schriftgröße (12pt, 11pt (Standard))
+%BCOR1cm,							% Bindekorrektur, bspw. 1 cm
+%DIVcalc,							% führt die Satzspiegelberechnung neu aus
+%											  s. scrguide 2.4
+%oneside,							% einseitiges Layout
+%twocolumn,						% zweispaltiger Satz
+%openany,							% Kapitel können auch auf linken Seiten beginnen
+%halfparskip*,				% Absatzformatierung s. scrguide 3.1
+%headsepline,					% Trennline zum Seitenkopf	
+%footsepline,					% Trennline zum Seitenfuß
+%notitlepage,					% in-page-Titel, keine eigene Titelseite
+%chapterprefix,				% vor Kapitelüberschrift wird "Kapitel Nummer" gesetzt
+%appendixprefix,				% Anhang wird "Anhang" vor die Überschrift gesetzt 
+%normalheadings,			% Überschriften etwas kleiner (smallheadings)
+%idxtotoc,						% Index im Inhaltsverzeichnis
+%liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
+%bibtotoc,						% Literaturverzeichnis im Inhalt
+%leqno,								% Nummerierung von Gleichungen links
+%fleqn,								% Ausgabe von Gleichungen linksbündig
+%draft								% überlangen Zeilen in Ausgabe gekennzeichnet
+]
+{scrbook}
+
+%\pagestyle{empty}		% keine Kopf und Fußzeile (k. Seitenzahl)
+%\pagestyle{headings}	% lebender Kolumnentitel  
+
+%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[ngerman]{babel}
+\usepackage[ansinew]{inputenc}
+
+%% Falls die automatische Worttrennung in Wörtern mit Umlauten
+%% nicht funktionieren sollte oder der Text pixelig aussieht:
+%% ==> Installieren Sie die cm-super Fonts (z.B. mit dem mikTeX Package Manager).
+%% Eine nicht ganz vollwertige Alternative ist die Verwendung dieses Pakets:
+%\usepackage{ae, aeguill}
+
+
+%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%Zum Laden von Grafiken
+%\usepackage{subfig} %%Teilabbildungen in einer Abbildung
+%\usepackage{pst-all} %%PSTricks - nicht verwendbar mit pdfLaTeX
+
+%% Beachten Sie:
+%% Die Einbindung einer Grafik erfolgt mit \includegraphics{Dateiname}
+%% bzw. über den Dialog im Einfügen-Menü.
+%% 
+%% Im Modus "LaTeX => PDF" können Sie u.a. folgende Grafikformate verwenden:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% In den Modi "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% können Sie u.a. folgende Grafikformate verwenden:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+\usepackage{ucs} %Unicode Sonderzeichen
+\usepackage{wrapfig} %Grafiken im Text fließen lassen.
+\usepackage[colorlinks=true,
+        linkcolor=black,
+        citecolor=black,
+        filecolor=black,
+        pagecolor=black,
+        urlcolor=black]{hyperref} %Darf erst zuletzt geladen werden!
+        
+\hypersetup{ %PDF spezifische Einstellungen
+pdfauthor = {André Reichelt},
+pdftitle = {Das OpenAnno-Handbuch},
+pdfsubject = {2008.01},
+pdfkeywords = {OpenAnno 2008.01 Handbuch},
+pdfcreator = {LaTeX with hyperref package},
+pdfproducer = {dvips + ps2pdf},
+pdfpagelayout = {TwoColumnRight}}
+
+%% Bibliographiestil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{natbib}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Ihr Buch                                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Schmutztitel-Seite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\extratitle{Schmutztitel}
+
+%% eigene Titelseitengestaltung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+%\begin{titlepage}
+%Einsetzen der TXC Vorlage "Deckblatt" möglich
+%\end{titlepage}
+
+%% Angaben zur Standardformatierung des Titels %%%%%%%%%%%%%%%%%%%%%%%%
+%\titlehead{Titelkopf}
+\subject{2008.01}
+\title{Das OpenAnno-Handbuch}
+\author{André Reichelt}
+\and{Kilian K., Fabian R., Tobias Schröfel}
+\thanks{Fußnote}			% entspr. \footnote im Fließtext
+%\date{}							% falls anderes, als das aktuelle gewünscht
+\publishers{Das OpenAnno-Team}
+
+%% Rückseite der Titelseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\uppertitleback{Titelrückseitenkopf}
+%\lowertitleback{Titelrückseitenfuß}
+
+%% Widmungsseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\dedication{Widmung}
+
+\maketitle 						% Titelei wird erzeugt
+
+%% Erzeugung von Verzeichnissen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents			% Inhaltsverzeichnis
+%\listoftables				% Tabellenverzeichnis
+%\listoffigures				% Abbildungsverzeichnis
+
+
+%% Der Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter					% Vorspann (z.B. römische Seitenzahlen)
+\chapter{Einleitung}
+Herzlich willkommen zur ersten spielbaren Demo von OpenAnno. OpenAnno ist ein Spiel, das sich an die erfolgreiche Anno-Reihe von Sunflowers/Ubisoft anlehnt aber auch völlig neue Konzepte in dieses Genre einbringt.
+
+Das Spiel wird von einigen Freiwilligen in ihrer Freizeit entwickelt. Wir sind keine Profis sondern machen das alles als Hobby und werden dafür auch nicht bezahlt. Warum wir das machen: Wir lernen etwas dabei und Ihr habt Euren Spaß beim Spielen - hoffen wir jedenfalls.
+
+OpenAnno ist eine OpenSource-Anwendung. Das bedeutet, dass jeder den Quellcode, also die Anweisungen an den Computer, wie OpenAnno funktioniert und aussehen soll, einsehen und verändern darf. Zudem beinhaltet OpenSource das Recht, das Spiel überall kostenlos und legal herunter zu laden, zu spielen und zu verbreiten, solange Du Dich an \href{http://openanno.org/site/index.php?page=licence}{diese Regeln} hältst. Es ist jeder herzlich eingeladen, uns zu unterstützen und dem Team \href{http://openanno.org/site/index.php?page=development}{beizutreten}.
+
+Bedenke bitte, dass wir Dir nicht garantieren können, dass alles funktioniert. Der Funktionsumfang dieser ersten Demo-Version ist noch extrem beschränkt. Wir wären für fachkundige Hilfe sehr dankbar. Bei Problemen kannst Du Dich gerne, über das \href{http://openanno.org/forum}{Forum}, via \href{http://openanno.org/site/index.php?page=contact}{Kontaktformular} oder im \href{http://openanno.org/site/index.php?page=internet-relay-chat}{Chatroom} an uns wenden.
+
+Im Folgenden findest Du nun eine Bedienungsanleitung, die allerdings wie alles Andere auch keinen Anspruch auf Vollständigkeit erhebt. Falls Du Fehler findest, kannst Du dich gerne an das Team wenden.
+
+\textit{Wir, das \href{http://openanno.org/site/index.php?page=team}{OpenAnno-Team}, wünschen Dir nun viel Spaß beim Spielen dieser ersten Demo.}
+
+%########################################################################################################
+
+\mainmatter						% Hauptteil
+%\setpartpreamble[Position][Breite]{Text}
+\setpartpreamble[u, r][6cm]{Dieser Abschnitt erklärt den grundlegenden Aufbau der Bedienoberfläche und gibt andere allgemeine Informationen.}
+\part{Allgemeines}
+
+%========================================================================================================
+\chapter{Spielziel}
+Das Spielziel in OpenAnno ist es, eine Inselwelt zu besiedeln und mit dem Aufbau einer Kolonie möglichst viel Geld zu verdienen und Macht zu erlangen. Dieses Ziel erreicht man durch den Aufbau einer eigenen komplexen Stadt, sowie dem Handel mit den Mitspielern oder dem unabhängigen Händler. Auch Kriege ermöglichen es seinen Machteinfluss auszudehnen und mehr Geld einzunehmen.
+
+%========================================================================================================
+\chapter{Oberfläche}
+Die Benutzeroberfläche von OpenAnno besteht im Grunde genommen aus dem Hauptbildschirm und den drei folgenden Bereichen, von oben links im Uhrzeigersinn angeordnet:
+
+%--------------------------------------------------------------------------------------------------------
+\section{Rohstoffbereich}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Rohstoffinfo.jpg}
+	\caption{Das inselweite Lager}
+\end{figure}
+In diesem Bereich werden alle Habseligkeiten der aktuellen Insel angezeigt. Die Anzeige erscheint ausschließlich dann, wenn sich der Mauszeiger oberhalb der Insel und innerhalb des Einzugsbereichs einer eigenen Siedlung befindet. Die Goldanzeige erscheint global immer - unabhängig ob eine Insel aktiv ist oder nicht. Denn die Goldvorräte sind von Siedlungen und Inseln unabhängig und überall identisch.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Stadtinformationsbereich}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Stadtinfo.jpg}
+	\caption{Stadtinformation}
+\end{figure}
+Hier finden sich alle wichtigen Information zur aktuell gewählten Stadt. Es wird neben dem Wappen des Spielers auch die Einwohnerzahl der Stadt sowie deren Name angezeigt.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Newsbereich}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Newsbereich.jpg}
+	\caption{Mitteilung über Stadtgründung}
+\end{figure}
+Der Newsbereich zeigt alle wichtigen Informationen, über das Spielgeschehen, gesammelt an. Wenn die Nachricht mit dem Mauszeiger überfahren wird, erscheint ein erklärender Text darunter. Durch das Anklicken der Nachricht springt die Ansicht an den Ort des Geschehens. Die Nachrichten verschwinden nach einer bestimmten Zeit automatisch wieder. Falls mehr als vier Nachrichten aktuell sind, kann man durch die Nachrichten schalten, indem man die beiden kleinen Knöpfe links und rechts neben den Nachrichten betätigt.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Menü- und Hilfeknopf}
+\begin{wrapfigure}{r}
+	\centering
+		\includegraphics{Bilder/Oa_startmenu_compass.png}
+\end{wrapfigure}
+Mit diesem Knopf kann das Menü geöffnet werden. Parallel dazu kann das Spielmenü auch jederzeit mit der \kbd{Esc} Taste aufgerufen werden. Innerhalb dieses Menüs lässt sich ein Spielstand laden oder speichern oder man kann ins Hauptmenü zurückkehren.
+
+\begin{wrapfigure}{r}
+	\centering
+		\includegraphics{Bilder/Oa_startmenu_help.png}
+\end{wrapfigure}
+Daneben befindet sich noch ein goldenes Fragezeichen. Durch einen Klick darauf wird die Tastaturübersicht eingeblendet. Alternativ lässt es sich auch über die \kbd{F1} Taste aufrufen.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Minikarte}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Kartenpanel.jpg}
+	\caption{Das Kartenpanel}
+\end{figure}
+Die Minikarte wird von einigen Knöpfen umgeben. Sie dienen dem Vergrößern, Verkleinern und Drehen der Ansicht. Mit dem Fernrohr kann die Minikarte ausgeblendet werden. Nähere Informationen zu diesem Thema befinden sich im Abschnitt „\href{http://openanno.org/site/index.php?page=konzepte#Kartenpanel}{Das Kartenpanel}“.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Menüsymbole}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Steuerbereich.jpg}
+	\caption{Steuerbereich}
+\end{figure}
+In diesem Bereich befinden sich alle wichtigen Schaltsymbole. Dazu zählen das Bausymbol (Werkzeug) sowie das Diplomatiesymbol (Dokument). Durch das Anklicken eines dieser Symbole öffnet sich das dazugehörige Menü im Dialogbereich.
+
+%########################################################################################################
+
+\setpartpreamble[u, r][6cm]{Dieser Abschnitt beschreibt grundlegende Konzepte zur Steuerung von OpenAnno.}
+\part{Grundlagen}
+
+%========================================================================================================
+\chapter{Navigation}
+In diesem Abschnitt wird das Navigieren auf der Karte erläutert. Dies beinhaltet das Verschieben, Zoomen und Rotieren der Ansicht.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Verschieben der Ansicht}
+Zum Verschieben der aktuellen Ansicht gibt es zwei Möglichkeiten. Zum Einen können die vier Pfeiltasten verwendet werden, um die Ansicht in die gewählte Richtung zu verschieben. Zum Anderen ist es möglich, durch eine Berührung des Bildschirmrands mit dem Mauszeiger eine Bewegung in die jeweilige Richtung durchzuführen.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Das Kartenpanel}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Kartenpanel.jpg}
+	\caption{Das Kartenpanel unten rechts}
+\end{figure}
+Mit Hilfe dieses Panels kann die Karte gedreht und gezoomt werden. Die beiden Lupen dienen dem vergrößern („+“) und verkleinern („-“) der Ansicht. Mit den beiden Kompassen kann die Ansicht rotiert werden. Die Minikarte ist aktuell noch nicht in Betrieb, kann jedoch mit dem Fernrohr versteckt werden. Die vier Steuerungssymbole werden dadurch weiter unten platziert.
+
+%========================================================================================================
+\chapter{Markieren}
+Es gibt in OpenAnno zwei verschiedene Möglichkeiten, etwas zu markieren.
+
+%--------------------------------------------------------------------------------------------------------
+\section{…durch anklicken}
+Durch ein einfaches Anklicken eines Objektes wird dieses markiert.
+
+%--------------------------------------------------------------------------------------------------------
+\section{…durch Rahmenziehen}
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Markierrahmen.jpg}
+	\caption{Markierrahmen}
+\end{figure}
+Wenn man mit der linken Maustaste an eine beliebige Stelle klickt und diese dann gedrückt hält, kann man einen Rahmen ziehen. Sobald man die Taste loslässt, werden alle Einheiten innerhalb des markierten Bereiches gemeinsam markiert.
+
+Eine Ausnahme bilden hier Gebäude aller Art. Bei Gebäuden ist die Markierung nur gültig, wenn sich nur ein Gebäude im Rahmen befindet. Befinden sich mehrere Gebäude innerhalb der Markierung wird nach dem loslassen der Taste nichts markiert. Außerdem gilt, dass bewegliche Einheiten Gebäuden immer vorgezogen werden. Befindet sich also z.B. ein Schiff und der Kontor innerhalb der Markierung, wird das Schiff markiert.
+
+%========================================================================================================
+\chapter{Schiffssteuerung}
+Dieser Abschnitt beschreibt, wie man mit dem Schiff navigiert.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Bewegung}
+Um ein Schiff zu bewegen, muss es zunächst markiert werden. Dazu genügt ein Linksklick auf das Schiff. Daraufhin wird das Schiff weiss umrandet und über der Abbildung erscheint ein grüner Balken, der die Energie anzeigt. Um die Markierung wieder aufzuheben, genügt ein Linksklick außerhalb des Schiffes oder auf ein anderes Objekt.
+
+Mit einem Rechtsklick auf eine beliebige Stelle im tiefen Wasser (dunkelblau) lässt sich das Schiff bewegen. Direkt nach dem Klick erscheint eine Zielmarkierung in Form einer Boje. Das Schiff fährt dann auf dem schnellsten Weg zu dieser Markierung.
+
+In der unteren Bildschirmmitte erscheint beim Markieren außerdem ein Informationsfenster. Dieses Infopanel besteht aus zwei verschiedenen Ansichten, die sich mit den Goldenen Kugeln am Rand durchschalten lassen.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{Bilder/Schiffsinfo1.jpg}
+	\caption{Schiffsinfo Tab 1}
+\end{figure}
+Das erste Tab dient in diesem Fall der Statusinformation. Neben einem Bild des Schiffes befindet sich hier der Schiffsname sowie eine prozentuale Statusanzeige. Mit dem Knopf in der rechten unteren Ecke lässt sich eine neue Siedlung gründen, wenn das Schiff in Reichweite einer geeigneten Küste ist.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{Bilder/Schiffsinfo2.jpg}
+	\caption{Schiffsinfo Tab 2}
+\end{figure}
+Das zweite Tab, zu erreichen über die untere goldene Kugel, zeigt den aktuellen Ladezustand des Schiffes an. Jedes Laderaum kann maximal fünfzig Einheiten einer beliebigen Ware aufnehmen. Der grüne Balken neben den einzelnen Waren zeigt prozentual an, wie voll der aktuell ausgewählte Laderaum ist. Durch einen Klick auf die Holzkiste öffnet sich der Warenaustausch-Dialog. Mit diesem Dialog lassen sich Waren zwischen Kontor und Schiff tauschen bzw. handeln. Die Funktion dieses Dialogs wird an einer anderen Stelle genau erklärt.
+
+%========================================================================================================
+\chapter{Gründung einer Siedlung}
+Um eine neue Siedlung zu gründen, bedarf es einiger Voraussetzungen. Zunächst müssen sich im Schiff genügend Werkzeuge und Bauholz befinden. Außerdem muss das Schiff in Reichweite einer Küste liegen. Um die Siedlung zu errichten, klickt man im Schiffsinfo-Dialog im ersten Tab auf das passende Bausymbol und baut dann den Kontor wie jedes andere Gebäude.
+
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Siedlung_gruenden.jpg}
+	\caption{Eine neue Siedlung entsteht}
+\end{figure}
+Sobald der Knopf zum Gründen einer neuen Siedlung betätigt wurde, erscheint um das Schiff ein aufgehellter Bereich, der anzeigt, wo eine Siedlung gegründet werden kann. Innerhalb dieses Radius kann der Kontor an einer beliebigen Stelle errichtet werden. Ein Kontor muss immer am Strand gebaut werden. Ist der Bauplatz ungeeignet, erscheint das Geisterbild in roter Farbe, ansonsten weiß. Um das Gebäude endgültig zu errichten, genügt ein Linksklick an die Stelle.
+
+%========================================================================================================
+\chapter{Verladen von Waren}
+Bevor man auf der Insel Gebäude errichten kann, müssen zunächst Waren aus den Lagerräumen des Schiffes an Land geschafft werden. Dadurch werden die Materialien vom Schiff in das Kontor transferiert. Um Waren zu verladen, markiert man das gewünschte Schiff und daraufhin das zweite Tab. Der Verlademodus wird per Klick auf die Holzkiste gestartet.
+
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Warenaustausch.jpg}
+	\caption{Warenaustauschdialog}
+\end{figure}
+Der Warenaustauschdialog besteht aus zwei Teilen. Der obere Teil stellt das Lager der Stadt dar während der untere Teil das Lager des Schiffes repräsentiert. Auch hier zeigen wieder grüne Balken am Rand der Ware an, wie voll das Lager prozentual ist. Im Gegensatz zum Schiffslager kann das Lagerhaus allerdings nur 30 Einheiten je Ware aufnehmen. Mit „Trade with:“ lässt sich die Zielsiedlung ändern, falls sich mehrere Kontore in Reichweite befinden sollten. Darunter lässt sich mit „Exchange:“ einstellen, wie viele Wareneinheiten letztendlich per Klick ausgetauscht werden.
+
+Um Waren zu tauschen, klickt man wahlweise auf dem Schiff oder im Lagerhaus auf die jeweilige Ware und diese wird zum Gegenspieler geschickt. Ist das Lagerhaus oder das Schiff voll, so erscheint das Symbol auf der Gegenseite jeweils grau. Es erscheint auch grau, wenn das eigene Lager jeweils leer ist.
+
+%========================================================================================================
+\chapter{Bauen}
+Sobald sich genügend Waren im Kontor befinden, lassen sich Gebäude errichten. Um in den Baumodus zu wechseln, muss man auf der Linken Seite des Bildschirms auf das Bausymbol klicken.
+
+Das Baumenü besteht aus sechs Tabs. Innerhalb der Reiter befinden sich nach Funktion geordnet folgende Gebäudetypen:
+\begin{itemize}
+	\item \emph{Services:} Wichtige öffentliche Gebäude wie das Lagerhaus oder die Kirche
+	\item \emph{Residents:} Wohngebäude
+	\item \emph{Companies:} Herstellende und weiterverarbeitende Betriebe
+	\item \emph{Military:} Kasernen und Stadtverteidigung
+	\item \emph{Infrastructural:} Straßen, Brücken usw.
+	\item \emph{Specials and Gifts:} Spezialgebäude und Geschenke an die Bürger
+\end{itemize}
+
+Um ein Gebäude zu errichten, muss zunächst der zugehörige Knopf im Menü ausgewählt werden. Daraufhin kann das Gebäude wie der Kontor platziert werden. Wird das Geisterbild rot dargestellt, ist der Bau an dieser Stelle nicht möglich oder es fehlen Rohstoffe. Durch einen Linksklick an die Stelle wird das Gebäude plaziert.
+
+\begin{figure}
+	\centering
+		\includegraphics{Bilder/Rohstoffabzug.jpg}
+	\caption{Rohstoffabzug}
+\end{figure}
+Wie viele Rohstoffe ein Gebäude kostet, wird unterhalb der Ist-Rohstoffe angezeigt. Nach dem Bauen werden die Rohstoffe dem Lager abgezogen und die untere Zeile verschwindet wieder.
+
+%========================================================================================================
+\chapter{Bildschirmfotos}
+\label{Bildschirmphoto}
+Um Bildschirmfotos während des Spiels, vom aktuellen Bildschirminhalt, zu machen, reicht ein Druck auf die \kbd{S} Taste. Daraufhin wird das Bildschirmphoto mit dem Datum und der Uhrzeit der Aufnahme benannt und im PNG-Format gespeichert.
+Um das Photo nun aufzurufen, wechselt man mit einem Dateibrowser in das OpenAnno-Verzeichnis. Dort liegen die Photos in dem Ordner „content/screenshots“.
+
+%########################################################################################################
+\setpartpreamble[u, r][6cm]{Im Folgenden sind alle in OpenAnno verfügbaren Gebäude nach Siedlerstufe geordnet aufgelistet und beschrieben. Noch gibt es einige Gebäude, die noch nicht integriert sind, diese sind hier deshalb auch nicht aufgeführt.}
+\part{Gebäude}
+
+%========================================================================================================
+\chapter{Siedlerstufe I - Seeleute}
+Dies ist die erste Siedlerstufe. In dieser Siedlerstufe leben alle Bewohner der Stadt in einfachen Zelten oder Holzverschlägen. Die Bürger sind mit einer einfachen Gebetsstätte, etwas zu Essen und Stoffen zu Frieden, aus denen sie sich selbst einfache Kleidung nähen.
+
+%--------------------------------------------------------------------------------------------------------
+\section{Dienste}
+
+\subsection{Außenposten}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/branch_office_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Der Außenposten stellt das Kontor dar. Dieses Gebäude dient als Anlaufpunkt für Schiffe und verwaltet die ganze Insel. Außerdem befindet sich hier das Hauptlager.
+	\end{minipage}
+\end{figure}
+
+\subsection{Lagerzelt}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/storagetent_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Im Lagerzelt können alle möglichen Produkte und Rohstoffe gelagert werden. Dieses Gebäude bietet sich vor allen Dingen dann an, wenn das Hauptlager zu weit entfernt von einem Betrieb ist oder über zu wenige Karren verfügt.
+	\end{minipage}
+\end{figure}
+
+\subsection{Signalfeuer}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/signalfire_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Das Signalfeuer ist von weit hin sichtbar und geleitet den Schiffen den Weg zum eigenen Hafen.
+	\end{minipage}
+\end{figure}
+
+\subsection{Sonnensegel}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/sunsail_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Unter diesem Sonnensegel hat der Pfarrer des Dorfes eine kleine Kapelle eingerichtet, die ein Dorf mit einfachen Glaubensansprüchen versorgt.
+	\end{minipage}
+\end{figure}
+
+%--------------------------------------------------------------------------------------------------------
+\section{Betriebe}
+
+\subsection{Weber}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/weaver_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Der Weber holt sich frische Wolle von den Schäfern ab und stellt daraus Stoffe her, aus denen sich die Bürger einfache Kleidung schneidern.
+	\end{minipage}
+\end{figure}
+
+\subsection{Holzfäller}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/lumberjack_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Der Holzfäller als Mann für's Grobe sägt Baumstämme in tragbare Stücke, um diese als Baumaterial verwenden zu können.
+	\end{minipage}
+\end{figure}
+
+\subsection{Schäfer}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/herdsman_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Der Schafhirte hegt seine Tiere, um ausreichend Nahrung und Wolle für die Siedlung herzustellen.
+	\end{minipage}
+\end{figure}
+
+\subsection{Fischer}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/fisherman_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Der Fischer fährt mit seinem Boot hinaus auf die See, um die benötigte Nahrung für die Bürger zu beschaffen.
+	\end{minipage}
+\end{figure}
+
+%--------------------------------------------------------------------------------------------------------
+\section{Militär}
+
+\subsection{Turm}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/lookout_45.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Der Ausguck sorgt für Überblick und herannahende Feinde werden schnell entdeckt.
+	\end{minipage}
+\end{figure}
+
+%--------------------------------------------------------------------------------------------------------
+\section{Infrastruktur}
+
+\subsection{Pfad}
+\begin{figure}[!htb]
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=1.0\linewidth]{Bilder/path_ac.png}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		Dieser einfacher Trampelpfad kann nur von Fußeinheiten genutzt werden und ist schwer zu passieren. Jedoch läuft keiner gerne durch die Vegetation.
+	\end{minipage}
+\end{figure}
+
+%########################################################################################################
+\appendix	
+\setpartpreamble[u, r][6cm]{Im Anhang befindet sich noch eine Liste aller Tastenkürzel sowie ein Technologiebaum.}
+\part{Gebäude}
+
+%========================================================================================================
+\chapter{Tastenkürzel}
+\begin{wrapfigure}{r}
+	\centering
+		\includegraphics{Bilder/Oa_startmenu_help.png}
+\end{wrapfigure}
+OpenAnno bringt einige nützliche Tastenkürzel mit sich. Diese lassen sich auch innerhalb des Spieles oder dem Hauptmenü jederzeit anzeigen, indem man die Taste \kbd{F1} drückt oder auf das Fragezeichen klickt.
+
+\begin{table}
+	\centering
+		\begin{tabular*}{\textwidth}[]{lp{0.75\textwidth}lp{0.25\textwidth}}
+			\hline
+			Taste & Wirkung\\
+			\hline\hline
+			\leftarrow & Nach links scrollen\\
+			\rightarrow & Nach rechts scrollen\\
+			\uparrow & Nach oben scrollen\\
+			\downarrow & Nach unten scrollen\\
+			F1 & Hilfe anzeigen\\
+			F5 & Schnelles Speichern (Quicksave)\\
+			F10 & Konsole ein-/ausschalten\\
+			Esc & Spielmenü anzeigen\\
+			T & Gitternetz ein-/ausschalten\\
+			X & Abrissbirne\\
+			S & \hyperref[Bildschirmphoto]{Bildschirmphoto}\\
+			P & Pause\\
+			+ & Schneller\\
+			- & Langsamer\\
+			\unichar{"21E7} & Ermöglicht, bei gedrückt halten, das Bauen mehrerer gleicher Gebäude nacheinander\\
+			\hline
+		\end{tabular*}
+\end{table}
+
+%########################################################################################################
+\end{document}
